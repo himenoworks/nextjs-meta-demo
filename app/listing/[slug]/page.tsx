@@ -1,19 +1,16 @@
-import type { Metadata, ResolvingMetadata } from "next";
+import type { Metadata } from "next";
 
 type Props = {
   params: { slug: string };
   searchParams: { [key: string]: string | string[] | undefined };
 };
 
-export async function generateMetadata(
-  { params }: Props,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = params;
 
   const meta = {
     title: `Slug ${slug}`,
-    description: "Nextjs meta demo description.",
+    description: `Nextjs meta demo description ${slug}.`,
     image: `https://dummyimage.com/600x480/000/fff.jpg&text=this+${slug}`,
   };
 
