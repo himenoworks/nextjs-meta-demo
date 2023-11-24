@@ -7,7 +7,7 @@ const meta = {
   title: "Nextjs Meta Demo Title",
   description: "Nextjs meta demo description.",
   image:
-    "https://images.unsplash.com/photo-1430990480609-2bf7c02a6b1a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://dummyimage.com/600x480/000/fff.jpg&text=this+home",
 };
 
 export const metadata: Metadata = {
